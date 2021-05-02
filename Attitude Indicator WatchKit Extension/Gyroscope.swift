@@ -5,7 +5,6 @@
 //  Created by Jeremy Bahadirli on 4/30/21.
 //
 
-import Foundation
 import CoreMotion
 
 class Gyroscope: ObservableObject {
