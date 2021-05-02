@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Combine
 import CoreMotion
 
 class Gyroscope: ObservableObject {
@@ -24,8 +23,8 @@ class Gyroscope: ObservableObject {
                 print(error!)
                 return
             }
-            self.rotation = atan2(motion?.gravity.x ?? 0, motion?.gravity.y ?? 0) - .pi
-            self.pitch = (motion?.gravity.z ?? 0) * 100 + 50
+            self.rotation = atan2(motion!.gravity.x, motion!.gravity.y) - .pi
+            self.pitch = motion!.gravity.z
         }
     }
 }

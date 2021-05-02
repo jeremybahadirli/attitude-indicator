@@ -9,22 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var gyro = Gyroscope()
+    private let pitchSensitivity: CGFloat = 100
+    private let pitchOffset:      CGFloat = 50
+    
+    @ObservedObject private var gyro = Gyroscope()
     
     var body: some View {
         ZStack {
-            Image("img261")
+            Image("background")
                 .resizable()
                 .rotationEffect(.radians(gyro.rotation))
-                .offset(y: CGFloat(gyro.pitch))
+                .offset(y: CGFloat(gyro.pitch) * pitchSensitivity + pitchOffset)
             VStack (spacing: 0) {
                 Rectangle()
-                    .foregroundColor(Color.init(red: 36/255, green: 40/255, blue: 44/255))
-                Image("img259")
+                    .foregroundColor(Color(red: 36/255, green: 40/255, blue: 44/255))
+                Image("foreground")
                     .resizable()
                     .scaledToFill()
                 Rectangle()
-                    .foregroundColor(Color.init(red: 36/255, green: 40/255, blue: 44/255))
+                    .foregroundColor(Color(red: 36/255, green: 40/255, blue: 44/255))
             }
         }
         .navigationBarHidden(true)
