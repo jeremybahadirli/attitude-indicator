@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FA09428263B60E900644262 /* Attitude Indicator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3FA09427263B60E900644262 /* Attitude Indicator WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3FA0942D263B60EA00644262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA0942C263B60EA00644262 /* Assets.xcassets */; };
+		3FA09434263B60EA00644262 /* Attitude Indicator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3FA09433263B60EA00644262 /* Attitude Indicator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3FA09439263B60EA00644262 /* Attitude_IndicatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA09438263B60EA00644262 /* Attitude_IndicatorApp.swift */; };
+		3FA0943B263B60EA00644262 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0943A263B60EA00644262 /* ContentView.swift */; };
+		3FA09443263B60EB00644262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA09442263B60EB00644262 /* Assets.xcassets */; };
+		3FA09446263B60EB00644262 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA09445263B60EB00644262 /* Preview Assets.xcassets */; };
+		3FA094A0263CA74900644262 /* Gyroscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0949F263CA74900644262 /* Gyroscope.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FA09429263B60E900644262 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FA0941D263B60E800644262 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FA09426263B60E900644262;
+			remoteInfo = "Attitude Indicator WatchKit App";
+		};
+		3FA09435263B60EA00644262 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FA0941D263B60E800644262 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FA09432263B60EA00644262;
+			remoteInfo = "Attitude Indicator WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3FA0944E263B60EB00644262 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3FA09434263B60EA00644262 /* Attitude Indicator WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA09452263B60EB00644262 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3FA09428263B60E900644262 /* Attitude Indicator WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3FA09423263B60E800644262 /* Attitude Indicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Attitude Indicator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA09427263B60E900644262 /* Attitude Indicator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Attitude Indicator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA0942C263B60EA00644262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FA0942E263B60EA00644262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA09433263B60EA00644262 /* Attitude Indicator WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Attitude Indicator WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA09438263B60EA00644262 /* Attitude_IndicatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attitude_IndicatorApp.swift; sourceTree = "<group>"; };
+		3FA0943A263B60EA00644262 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FA09442263B60EB00644262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FA09445263B60EB00644262 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FA09447263B60EB00644262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA0949F263CA74900644262 /* Gyroscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gyroscope.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FA09430263B60EA00644262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FA0941C263B60E800644262 = {
+			isa = PBXGroup;
+			children = (
+				3FA0942B263B60E900644262 /* Attitude Indicator WatchKit App */,
+				3FA09437263B60EA00644262 /* Attitude Indicator WatchKit Extension */,
+				3FA09424263B60E800644262 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FA09424263B60E800644262 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FA09423263B60E800644262 /* Attitude Indicator.app */,
+				3FA09427263B60E900644262 /* Attitude Indicator WatchKit App.app */,
+				3FA09433263B60EA00644262 /* Attitude Indicator WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FA0942B263B60E900644262 /* Attitude Indicator WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3FA0942C263B60EA00644262 /* Assets.xcassets */,
+				3FA0942E263B60EA00644262 /* Info.plist */,
+			);
+			path = "Attitude Indicator WatchKit App";
+			sourceTree = "<group>";
+		};
+		3FA09437263B60EA00644262 /* Attitude Indicator WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3FA09438263B60EA00644262 /* Attitude_IndicatorApp.swift */,
+				3FA0943A263B60EA00644262 /* ContentView.swift */,
+				3FA0949F263CA74900644262 /* Gyroscope.swift */,
+				3FA09442263B60EB00644262 /* Assets.xcassets */,
+				3FA09447263B60EB00644262 /* Info.plist */,
+				3FA09444263B60EB00644262 /* Preview Content */,
+			);
+			path = "Attitude Indicator WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3FA09444263B60EB00644262 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3FA09445263B60EB00644262 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FA09422263B60E800644262 /* Attitude Indicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA09453263B60EB00644262 /* Build configuration list for PBXNativeTarget "Attitude Indicator" */;
+			buildPhases = (
+				3FA09421263B60E800644262 /* Resources */,
+				3FA09452263B60EB00644262 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FA0942A263B60E900644262 /* PBXTargetDependency */,
+			);
+			name = "Attitude Indicator";
+			productName = "Attitude Indicator";
+			productReference = 3FA09423263B60E800644262 /* Attitude Indicator.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		3FA09426263B60E900644262 /* Attitude Indicator WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA0944F263B60EB00644262 /* Build configuration list for PBXNativeTarget "Attitude Indicator WatchKit App" */;
+			buildPhases = (
+				3FA09425263B60E900644262 /* Resources */,
+				3FA0944E263B60EB00644262 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FA09436263B60EA00644262 /* PBXTargetDependency */,
+			);
+			name = "Attitude Indicator WatchKit App";
+			productName = "Attitude Indicator WatchKit App";
+			productReference = 3FA09427263B60E900644262 /* Attitude Indicator WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3FA09432263B60EA00644262 /* Attitude Indicator WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA0944B263B60EB00644262 /* Build configuration list for PBXNativeTarget "Attitude Indicator WatchKit Extension" */;
+			buildPhases = (
+				3FA0942F263B60EA00644262 /* Sources */,
+				3FA09430263B60EA00644262 /* Frameworks */,
+				3FA09431263B60EA00644262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Attitude Indicator WatchKit Extension";
+			productName = "Attitude Indicator WatchKit Extension";
+			productReference = 3FA09433263B60EA00644262 /* Attitude Indicator WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FA0941D263B60E800644262 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3FA09422263B60E800644262 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					3FA09426263B60E900644262 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					3FA09432263B60EA00644262 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 3FA09420263B60E800644262 /* Build configuration list for PBXProject "Attitude Indicator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FA0941C263B60E800644262;
+			productRefGroup = 3FA09424263B60E800644262 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FA09422263B60E800644262 /* Attitude Indicator */,
+				3FA09426263B60E900644262 /* Attitude Indicator WatchKit App */,
+				3FA09432263B60EA00644262 /* Attitude Indicator WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FA09421263B60E800644262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA09425263B60E900644262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA0942D263B60EA00644262 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA09431263B60EA00644262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA09446263B60EB00644262 /* Preview Assets.xcassets in Resources */,
+				3FA09443263B60EB00644262 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FA0942F263B60EA00644262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA094A0263CA74900644262 /* Gyroscope.swift in Sources */,
+				3FA0943B263B60EA00644262 /* ContentView.swift in Sources */,
+				3FA09439263B60EA00644262 /* Attitude_IndicatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FA0942A263B60E900644262 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FA09426263B60E900644262 /* Attitude Indicator WatchKit App */;
+			targetProxy = 3FA09429263B60E900644262 /* PBXContainerItemProxy */;
+		};
+		3FA09436263B60EA00644262 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FA09432263B60EA00644262 /* Attitude Indicator WatchKit Extension */;
+			targetProxy = 3FA09435263B60EA00644262 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FA09449263B60EB00644262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FA0944A263B60EB00644262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FA0944C263B60EB00644262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Attitude Indicator WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4P76HS7SH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Attitude Indicator WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ga.tjtown.Attitude-Indicator.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		3FA0944D263B60EB00644262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Attitude Indicator WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = Q4P76HS7SH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Attitude Indicator WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ga.tjtown.Attitude-Indicator.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		3FA09450263B60EB00644262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4P76HS7SH;
+				IBSC_MODULE = Attitude_Indicator_WatchKit_Extension;
+				INFOPLIST_FILE = "Attitude Indicator WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ga.tjtown.Attitude-Indicator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		3FA09451263B60EB00644262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q4P76HS7SH;
+				IBSC_MODULE = Attitude_Indicator_WatchKit_Extension;
+				INFOPLIST_FILE = "Attitude Indicator WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ga.tjtown.Attitude-Indicator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		3FA09454263B60EB00644262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4P76HS7SH;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ga.tjtown.Attitude-Indicator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3FA09455263B60EB00644262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q4P76HS7SH;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ga.tjtown.Attitude-Indicator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FA09420263B60E800644262 /* Build configuration list for PBXProject "Attitude Indicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA09449263B60EB00644262 /* Debug */,
+				3FA0944A263B60EB00644262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FA0944B263B60EB00644262 /* Build configuration list for PBXNativeTarget "Attitude Indicator WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA0944C263B60EB00644262 /* Debug */,
+				3FA0944D263B60EB00644262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FA0944F263B60EB00644262 /* Build configuration list for PBXNativeTarget "Attitude Indicator WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA09450263B60EB00644262 /* Debug */,
+				3FA09451263B60EB00644262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FA09453263B60EB00644262 /* Build configuration list for PBXNativeTarget "Attitude Indicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA09454263B60EB00644262 /* Debug */,
+				3FA09455263B60EB00644262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FA0941D263B60E800644262 /* Project object */;
+}
