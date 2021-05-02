@@ -14,6 +14,9 @@ class Gyroscope: ObservableObject {
 
     @Published var rotation: Double = 0
     @Published var pitch:    Double = 0
+    
+    private let pitchSensitivity: Double = 100
+    private let pitchOffset:      Double = 50
 
     init() {
         self.motionManager = CMMotionManager()
@@ -24,7 +27,7 @@ class Gyroscope: ObservableObject {
                 return
             }
             self.rotation = atan2(motion!.gravity.x, motion!.gravity.y) - .pi
-            self.pitch = motion!.gravity.z
+            self.pitch = motion!.gravity.z * self.pitchSensitivity + self.pitchOffset
         }
     }
 }

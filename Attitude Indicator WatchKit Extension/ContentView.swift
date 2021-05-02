@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    private let pitchSensitivity: CGFloat = 100
-    private let pitchOffset:      CGFloat = 50
-    
+        
     @ObservedObject private var gyro = Gyroscope()
     
     var body: some View {
@@ -19,7 +16,7 @@ struct ContentView: View {
             Image("background")
                 .resizable()
                 .rotationEffect(.radians(gyro.rotation))
-                .offset(y: CGFloat(gyro.pitch) * pitchSensitivity + pitchOffset)
+                .offset(y: CGFloat(gyro.pitch))
             VStack (spacing: 0) {
                 Rectangle()
                     .foregroundColor(Color(red: 36/255, green: 40/255, blue: 44/255))
