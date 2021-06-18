@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
         
     @ObservedObject private var gyro = Gyroscope()
-    @State var offset: Float = 0.0
+    @State          private var offset: Float = 0.0
     
     var body: some View {
         ZStack {
