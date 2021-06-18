@@ -17,7 +17,7 @@ struct ContentView: View {
             Image("Background")
                 .resizable()
                 .rotationEffect(.radians(gyro.rotation))
-                .offset(y: CGFloat(gyro.pitch + Double(offset)))
+                .offset(y: CGFloat(gyro.pitch) + CGFloat(offset))
             VStack (spacing: 0) {
                 Rectangle()
                     .foregroundColor(Color(red: 36/255, green: 40/255, blue: 44/255))
