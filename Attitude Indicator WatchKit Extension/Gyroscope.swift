@@ -25,7 +25,7 @@ class Gyroscope: ObservableObject {
                 print(error!)
                 return
             }
-            self.rotation = atan2(motion!.gravity.x, motion!.gravity.y) - .pi
+            self.rotation = atan2(motion!.gravity.x, -motion!.gravity.y)
             self.pitch = motion!.gravity.z * self.pitchSensitivity + self.pitchOffset
         }
     }

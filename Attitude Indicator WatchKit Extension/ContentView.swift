@@ -16,7 +16,7 @@ struct ContentView: View {
         ZStack {
             Image("Background")
                 .resizable()
-                .rotationEffect(.radians(gyro.rotation))
+                .rotationEffect(-.radians(gyro.rotation))
                 .offset(y: CGFloat(gyro.pitch) + CGFloat(offset))
             VStack (spacing: 0) {
                 Rectangle()
@@ -32,7 +32,7 @@ struct ContentView: View {
         .navigationBarHidden(true)
         .ignoresSafeArea()
         .focusable(true)
-        .digitalCrownRotation($offset, from: -60.0, through: 60.0, sensitivity: .medium, isContinuous: false, isHapticFeedbackEnabled: true)
+        .digitalCrownRotation($offset, from: -60.0, through: 60.0, sensitivity: .medium)
     }
 }
 
