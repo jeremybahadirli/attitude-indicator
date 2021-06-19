@@ -16,7 +16,7 @@ struct ContentView: View {
         ZStack {
             Image("Background")
                 .resizable()
-                .rotationEffect(-.radians(gyro.rotation))
+                .rotationEffect(.radians(-gyro.rotation))
                 .offset(y: CGFloat(gyro.pitch) + CGFloat(offset))
             VStack (spacing: 0) {
                 Rectangle()
