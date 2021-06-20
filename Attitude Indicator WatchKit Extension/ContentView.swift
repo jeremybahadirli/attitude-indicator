@@ -11,7 +11,10 @@ struct ContentView: View {
     
     @ObservedObject private var gyro                  = Gyroscope()
     @State          private var crownAdjust:   Double = 0.0
-                    private var adjustedPitch: Double {gyro.pitch + crownAdjust}
+    
+    private var adjustedPitch: Double {
+        gyro.pitch + crownAdjust
+    }
     
     var body: some View {
         ZStack {
