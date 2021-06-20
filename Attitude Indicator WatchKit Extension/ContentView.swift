@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-        
-    @ObservedObject private var gyro          = Gyroscope()
-    @State          private var offset: Float = 0.0
+    
+    @ObservedObject private var gyro                  = Gyroscope()
+    @State          private var crownAdjust:   Double = 0.0
+                    private var adjustedPitch: Double {gyro.pitch + crownAdjust}
     
     var body: some View {
         ZStack {
             Image("Background")
                 .resizable()
                 .rotationEffect(.radians(-gyro.rotation))
-                .offset(y: CGFloat(gyro.pitch) + CGFloat(offset))
+                .offset(
+                    x: CGFloat(sin(gyro.rotation) * adjustedPitch),
+                    y: CGFloat(cos(gyro.rotation) * adjustedPitch)
+                )
             VStack (spacing: 0) {
                 Rectangle()
                     .foregroundColor(Color(red: 36/255, green: 40/255, blue: 44/255))
@@ -29,10 +33,10 @@ struct ContentView: View {
                 
             }
         }
+        .focusable(true)
+        .digitalCrownRotation($crownAdjust, from: -60.0, through: 60.0, sensitivity: .medium)
         .navigationBarHidden(true)
         .ignoresSafeArea()
-        .focusable(true)
-        .digitalCrownRotation($offset, from: -60.0, through: 60.0, sensitivity: .medium)
     }
 }
 
