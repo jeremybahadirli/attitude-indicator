@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject private var gyro                  = Gyroscope()
-    @State          private var crownAdjust:   Double = 0.0
+    @ObservedObject private var gyro                = Gyroscope()
+    @State          private var crownAdjust: Double = 0.0
     
     private var adjustedPitch: Double {
         gyro.pitch + crownAdjust
